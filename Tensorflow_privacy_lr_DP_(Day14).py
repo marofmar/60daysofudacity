@@ -1,4 +1,5 @@
 """
+#60daysofudacity #SecureandPrivateAI
 Day 14: Fri 12 Jul 2019 
 1. Secure and Private AI Challenge
 - I googled the term ‘differential privacy GitHub’ and could find out many people and companies are exploring the technique for the better deep learning of their own, and also could see many of them were enrolled students of our Challenge (https://github.com/topics/differential-privacy?o=asc&s=forks) 
@@ -9,7 +10,6 @@ Day 14: Fri 12 Jul 2019
 - Out of the different functions, tried to learn more about ‘lr_model_fn()’
 - Hmmmm this is difficult to understand by far, but I am sure that I will get better and better! 
 - Repo: https://github.com/marofmar/60daysofudacity/blob/master/Tensorflow_privacy_lr_DP_(Day14).py
-
 """
 
 # MNIST
