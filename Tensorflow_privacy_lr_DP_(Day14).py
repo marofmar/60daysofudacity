@@ -1,3 +1,20 @@
+<<<<<<< HEAD
+=======
+"""
+#60daysofudacity #SecureandPrivateAI
+Day 14: Fri 12 Jul 2019 
+1. Secure and Private AI Challenge
+- I googled the term ‘differential privacy GitHub’ and could find out many people and companies are exploring the technique for the better deep learning of their own, and also could see many of them were enrolled students of our Challenge (https://github.com/topics/differential-privacy?o=asc&s=forks) 
+- Out of the search results, deploying DP on CNN seemed pretty interesting, so I visited the repository and took a look (https://github.com/offthewallace/DP_CNN)
+- The program was about implementing PATE(Private Aggregation of Teacher Ensembles) by using custom datasets and training CNN model on it.
+- Wow, and I got to know about the repository Tensorflow holding, and the name of it is ‘Privacy’ and this contains research, tutorials, and the relevant codes for those. (https://github.com/tensorflow/privacy)
+- And from the above, Tensorflow Privacy repository, took a look into ‘DP Logistic Regression on MNIST’ which was in the tutorials directory.
+- Out of the different functions, tried to learn more about ‘lr_model_fn()’
+- Hmmmm this is difficult to understand by far, but I am sure that I will get better and better! 
+- Repo: https://github.com/marofmar/60daysofudacity/blob/master/Tensorflow_privacy_lr_DP_(Day14).py
+"""
+
+>>>>>>> f562dbff0ba847731f04c2de574bf8465ef0c659
 # MNIST
 def lr_model_fn(features, labels, mode, nclasses, dim):
 	input_layer = tf.reshape(features['x'], tuple([-1]) +dim)
@@ -47,4 +64,8 @@ elif mode == tf.estimator.ModeKeys.EVAL:
 		labels = labels, predictions = tf.argmax(input=logits, axis = 1))}
 	return tf.estimator.EstimatorSpec(
 		mode = mode, loss = scalar_loss, eval_metric_ops = eval_metric_ops)
+<<<<<<< HEAD
 	}
+=======
+	}
+>>>>>>> f562dbff0ba847731f04c2de574bf8465ef0c659

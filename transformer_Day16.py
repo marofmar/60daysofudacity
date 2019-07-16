@@ -1,3 +1,13 @@
+<<<<<<< HEAD
+=======
+"""
+Day 16: Sun 14 Jul 2019
+1. Secure and Private AI Challenge
+- Keep following PyTorch and Transformer((http://nlp.seas.harvard.edu/2018/04/03/attention.html)  : reading the article, searching on google for new techy terms, and shadow writing the code line by line
+- Also checked the kernel board of Kaggle competition for the team project! Go PySyfters!
+"""
+
+>>>>>>> f562dbff0ba847731f04c2de574bf8465ef0c659
 
 
 import numpy as np 

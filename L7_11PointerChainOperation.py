@@ -1,3 +1,5 @@
+# L7 - 11
+
 import torch as th 
 #!pip install syft 
 import syft as syft
@@ -37,3 +39,26 @@ bob._objects # then bob is empty
 alice._objects # now alice has what used to bob has before
 
 
+# L8 - 02
+import syft as sy 
+import torch as th 
+hook = sy.TorchHook(th) 
+from torch import nn, optim 
+
+#create a couple workers 
+
+bob = sy.VirtualWorker(hook, id = 'bob')
+alice = sy.VirtualWorker(hook, id = 'alice') 
+secure_worker = sy.VirtualWorker(hook, id = 'secure_worker') 
+
+bob.add_workers([alice, secure_worker])
+alice.add_workers([bob, secure_worker]) 
+secure_worekr.add_workers([alice, bob])
+# hmm so all of them linked? 
+
+# a tody dataset 
+data = th.tensor([[0,0],[0,1],[1,0],[1,1.]], requires_grad = True) 
+target = th.tensor([[0],[0],[1],[1.]], requires_grad = True)
+
+# get pointers to training data on each worker by
+# sending some training dat to bob and alice 
