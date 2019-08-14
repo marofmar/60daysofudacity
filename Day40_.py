@@ -3,7 +3,7 @@ Due to real-life project deadlines, I had to skip a day or two. \
 But, I will keep doing this 60 days of Udacity as my personal chanllenge goal!
 
 
-Wed 14 Aug 2019 
+Tue 13 Aug 2019 
 
 
 1. Read Medium posting: https://medium.com/@jonathan_hui/gan-why-it-is-so-hard-to-train-generative-advisory-networks-819a86b3750b
@@ -104,7 +104,7 @@ for epoch in range(total_epoch):
 			ax[i].set_axis_off() 
 			ax[i].imshow(np.reshape(samples[i], (28,28)))
 
-		plt.savefig('samples/{}.png'.format(str(epoch).zfill(3)), bbox_inches = 'tight') 
+		#plt.savefig('samples/{}.png'.format(str(epoch).zfill(3)), bbox_inches = 'tight') 
 		plt.close(fig) 
 
 print('Finished.')
