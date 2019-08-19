@@ -232,4 +232,4 @@ def display_image(epoch_no):
   return PIL.Image.open('image_at_epoch_{:04d}.png'.format(epoch_no))
 
 display_image(EPOCHS)
-
+#?
