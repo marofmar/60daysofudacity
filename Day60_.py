@@ -3,10 +3,11 @@ Day 60
 LAST !
 
 GAN to 1D data!!
+
+Discriminator should be trained more 
 '''
 
 
-# disc add
 import numpy as np 
 import matplotlib.pyplot as plt 
 import matplotlib.mlab as mlab 
